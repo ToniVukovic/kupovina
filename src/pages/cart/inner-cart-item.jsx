@@ -20,12 +20,16 @@ export const InnerCartItem = (props) => {
         </p>
         <p> ${price}</p>
         <div className="innerCountHandler">
-          <button onClick={() => removeFromCart(id)}>-</button>
+          <button className="minus" onClick={() => removeFromCart(id)}>
+            -
+          </button>
           <input
             value={cartItems[id]}
             onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
           />
-          <button onClick={() => addToCart(id)}>+</button>
+          <button className="plus" onClick={() => addToCart(id)}>
+            +
+          </button>
         </div>
       </div>
       <button className="remove-all" onClick={() => removeAll(id)}>

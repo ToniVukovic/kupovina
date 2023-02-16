@@ -4,13 +4,13 @@ import { Navbar } from "./components/navbar";
 import { Shop } from "./pages/shop/shop";
 import { Cart } from "./pages/cart/cart";
 import { ShopContextProvider } from "./context/shop-context";
-import { InnerCart } from "./pages/cart/inner-cart";
+// import { InnerCart } from "./pages/cart/inner-cart";
 
 function App() {
   return (
     <div className="App">
       <ShopContextProvider>
-        <InnerCart />
+        {/* <InnerCart /> */}
         <Router>
           <Navbar />
           <Routes>
